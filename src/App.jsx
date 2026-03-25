@@ -1,3 +1,4 @@
+import { createRoot } from 'react-dom/client';
 import React, { useState, useEffect, useCallback } from 'react';
 import { Trophy, Timer, RefreshCw, ChevronRight, Home, CheckCircle2, XCircle, BarChart3 } from 'lucide-react';
 
@@ -437,4 +438,7 @@ const App = () => {
     );
 };
 
-export default App;
+// 'export default App;' 이 부분은 지우고 아래 코드를 넣어!
+
+const root = createRoot(document.getElementById('root'));
+root.render(<App />);
